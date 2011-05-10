@@ -33,3 +33,10 @@ gem "cucumber-rails", :group => [:development, :test]
 gem "capybara", :group => [:development, :test]
 gem "jquery-rails"
 gem "rspec-rails", ">= 2.0.1", :group => [:development, :test]
+
+gem 'styleguide', :path => '/Users/mnitheib/styleguide'
+
+gem 'haml'
+gem 'sass'
+
+gem 'jammit'
