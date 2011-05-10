@@ -1,0 +1,178 @@
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans);
+@import url(http://fonts.googleapis.com/css?family=Fontdiner+Swanky);
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, menu, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+body {
+  line-height: 1; }
+
+article, aside, figure, footer, header, hgroup, nav, section {
+  display: block; }
+
+img, object, embed {
+  max-width: 100%; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: "";
+  content: none; }
+
+q:before, q:after {
+  content: "";
+  content: none; }
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+  a:focus {
+    text-decoration: underline; }
+  a:hover, a:active {
+    outline: none; }
+
+del {
+  text-decoration: line-through; }
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted black;
+  cursor: help; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+th {
+  font-weight: bold;
+  vertical-align: bottom; }
+
+td {
+  font-weight: normal;
+  vertical-align: top; }
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0; }
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word; }
+
+input[type="radio"] {
+  vertical-align: text-bottom; }
+
+input, textarea, select, button {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  font-size: 100%; }
+
+table {
+  font-size: inherit;
+  font: 100%; }
+
+small {
+  font-size: 85%; }
+
+strong, th {
+  font-weight: bold; }
+
+td {
+  vertical-align: top; }
+  td img {
+    vertical-align: top; }
+
+sub {
+  font-size: 75%;
+  line-height: 0;
+  position: relative; }
+
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+pre, code, kbd, samp {
+  font-family: monospace, sans-serif; }
+
+.clickable, label {
+  cursor: pointer; }
+
+input[type=button], input[type=submit] {
+  cursor: pointer; }
+
+button {
+  cursor: pointer;
+  margin: 0; }
+
+button, input, textarea, select {
+  background-color: white;
+  border: 0;
+  padding: 0;
+  margin: 0; }
+
+button {
+  width: auto;
+  overflow: visible; }
+
+.ie7 img {
+  -ms-interpolation-mode: bicubic; }
+
+.clearfix {
+  zoom: 1; }
+  .clearfix:before {
+    content: "\0020";
+    display: block;
+    height: 0;
+    overflow: hidden; }
+  .clearfix:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    overflow: hidden;
+    clear: both; }
+
+select, input, textarea {
+  color: #1c1d1f; }
+
+a:link {
+  -webkit-tap-highlight-color: #ffec53; }
+
+ins {
+  background-color: #fcd700;
+  color: #1c1d1f;
+  text-decoration: none; }
+
+mark {
+  background-color: #ffec53;
+  color: #1c1d1f;
+  font-style: italic;
+  font-weight: bold; }
+
+::selection {
+  background: #ff9b01;
+  color: white; }
+
+::-moz-selection {
+  background: #ff9b01;
+  color: white; }

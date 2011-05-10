@@ -1,0 +1,108 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td
+  :margin 0
+  :padding 0
+  :border 0
+  :outline 0
+  :vertical-align baseline
+  :background transparent
+
+body
+  :line-height 1
+
+///////// the following styles remove the generic dotted outline from the UI ////////
+///////// the :focus can be used for tabbed highlights                       ////////
+a
+  :outline none
+  &:focus
+    :text-decoration underline    
+
+ol,ul
+  :list-style none
+
+blockquote,q
+  :quotes none 
+
+blockquote:before,blockquote:after,q:before,q:after
+  :content none
+
+ins
+  :text-decoration none
+
+del
+  :text-decoration line-through
+
+table
+  :border-collapse collapse
+  :border-spacing 0
+
+input, textarea, select, button
+  font-family: inherit
+  font-size: inherit
+  font-weight: inherit
+  font-size: 100%
+
+legend
+  color: #000
+
+button, input, textarea, select
+  background-color: #fff
+  border: 0
+  padding: 0
+  
+input, textarea, keygen, select, button, isindex, datagrid
+  //font-size: 100%
+  //font-family: inherit
+
+
+// HTML5 CSS3 defaults
+header, section, footer, nav, article, aside, content
+  display: block
+
+header#site_header, header#site_header nav, footer#site_footer nav
+  //width: 920px
+  //float: left
+  //margin-right: 20px
+
+article aside
+  float:right
+  border: 1px solid
+  padding: 10px
+  margin: 0 10px 10px
+  width: 30%
+
+article header, article footer
+  float: left
+  width: 100%
+
+
+//hand cursor on clickable input elements
+label, input[type=button], input[type=submit], button, .linkBox 
+  cursor: pointer 
+
+// Non-semantic helper classes 
+
+//for image replacement
+.ir 
+  display: block 
+  text-indent: -999em 
+  overflow: hidden 
+  background-repeat: no-repeat 
+
+// Hide for both screenreaders and browsers
+// css-discuss.incutio.com/wiki/Screenreader_Visibility
+.hidden 
+  display:none 
+  visibility:hidden  
+
+// Hide only visually, but have it available for screenreaders 
+// www.webaim.org/techniques/css/invisiblecontent/ 
+// Solution from: j.mp/visuallyhidden - Thanks Jonathan Neal!
+.visuallyhidden 
+  position: absolute !important   
+  //IE6, IE7 
+  clip: rect(1px 1px 1px 1px) 
+  clip: rect(1px, 1px, 1px, 1px) 
+
+//Hide visually and from screenreaders, but maintain layout
+.invisible 
+  visibility: hidden 

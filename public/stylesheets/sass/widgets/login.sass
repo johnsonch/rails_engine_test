@@ -1,0 +1,56 @@
+@import "imports/dependencies.sass"
+
+.mural_logo
+  margin-bottom: 40px
+  h1
+    font-family: 'Fontdiner Swanky', arial, serif
+    font-size: 80px
+    color: $india_grey
+    text-shadow: $shadow_color 7px 7px 6px  
+    margin: 0px
+    line-height: 1em
+  p
+    color: $logo_title
+    text-align: center
+
+.login_container  // only being used on the log in screen
+  width: 500px
+  padding: 10px 20px 20px
+  background-color: $modal_background_color
+  +border_radius(5px, 5px, 5px, 5px)
+  position: relative
+  //+box_shadow(transparentize($alpha_grey, .2), 0px 0px 80px)
+  +large_form
+  
+.gecko
+  .login_container
+    +box_shadow(transparentize($alpha_grey, .2), 0px 0px 30px)
+    
+.webkit
+  .login_container
+    +box_shadow(transparentize($alpha_grey, .2), 0px 0px 80px)
+  
+.spinner_container
+  background: URL("../../images/ajax-loader-liner.gif") no-repeat 50% 50%
+  width: 400px
+  height: 310px
+  position: relative
+  h2
+    position: relative
+    left: 33%
+    color: $india_grey
+    
+.login_form
+  position: relative
+  
+  
+//////// browser specific /////////
+.webkit
+  .spinner_container
+    h2
+      top: 57%
+      
+.gecko
+  .spinner_container
+    h2
+      margin-top: 43%

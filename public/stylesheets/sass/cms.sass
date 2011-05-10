@@ -1,0 +1,81 @@
+// Right now, needs to stay exclusive
+// stylesheet is called into GYI
+// Can't trump site styles
+
+@import "imports/dependencies.sass"
+
+@mixin rounded-border-with-shadow($radius-width, $shadow-width, $shadow-color)
+  border-radius: $radius-width
+  -moz-border-radius: $radius-width
+  box-shadow: $shadow-width $shadow-width $shadow-width $shadow-color
+  -moz-box-shadow: $shadow-width $shadow-width $shadow-width $shadow-color
+  -webkit-box-shadow: $shadow-width $shadow-width $shadow-width $shadow-color
+
+.cms-grid-spot
+  overflow: auto
+  position: absolute
+  z-index: 9001
+
+.cms-wrapper
+  position: relative
+
+.cms-edit-surface
+  border: 3px solid $grid_spot_edit_border
+  position: absolute
+  z-index: 9002
+
+.cms-locked  
+  border-color: $grid_spot_locked_border
+  background: url(../images/locked_bkg_trans.png)
+
+.cms-updated
+  border-color: $grid_spot_updated_border
+
+#cms-overlay
+  background-color: $cms_overlay
+  left: 0
+  position: absolute
+  top: 0
+  z-index: 9000
+
+.cms-positioning-container
+  display: -moz-box
+  -moz-box-align: center
+  -moz-box-orient: horizontal
+  -moz-box-pack: center
+
+  display: -webkit-box
+  -webkit-box-align: center
+  -webkit-box-orient: horizontal
+  -webkit-box-pack: center
+
+//.cms-edit-container
+//  @include rounded-border-with-shadow(5px, 2px, #ccc)
+//  border: 1px solid #008000
+//  background-color: #fff
+//  display: none
+//  padding: 5px
+
+.cms-edit-surface
+  button
+    width: 25px
+    height: 25px
+    border: 0px
+    text-indent: -9999px
+    background: url(../images/Grid_Controls.png) no-repeat 50% 50%
+    &:hover
+      background: url(../images/Grid_Controls.png) no-repeat 50% 50%
+  .cms-edit-grid-spot
+    &:hover
+      background: url(../images/Grid_Controls.png) no-repeat 0 0
+  .cms-revert-grid-spot
+    background-position: 0 -90px
+    &:hover
+      background-position: 0 -30px
+  .cms-lock-grid-spot
+    background-position: 0 -120px
+    &:hover
+      background-position: 0 -120px
+      
+.locked_alert_tooltip
+  +semi_trans_down_arrow_tooltip

@@ -1,0 +1,143 @@
+.cms-grid-spot {
+  overflow: auto;
+  position: absolute;
+  z-index: 9001; }
+
+.cms-wrapper {
+  position: relative; }
+
+.cms-edit-surface {
+  border: 3px solid #71b213;
+  position: absolute;
+  z-index: 9002; }
+
+.cms-locked {
+  border-color: #74787f;
+  background: url(../images/locked_bkg_trans.png); }
+
+.cms-updated {
+  border-color: #ff6600; }
+
+#cms-overlay {
+  background-color: rgba(28, 29, 31, 0.6);
+  left: 0;
+  position: absolute;
+  top: 0;
+  z-index: 9000; }
+
+.cms-positioning-container {
+  display: -moz-box;
+  -moz-box-align: center;
+  -moz-box-orient: horizontal;
+  -moz-box-pack: center;
+  display: -webkit-box;
+  -webkit-box-align: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-pack: center; }
+
+.cms-edit-surface button {
+  width: 25px;
+  height: 25px;
+  border: 0px;
+  text-indent: -9999px;
+  background: url(../images/Grid_Controls.png) no-repeat 50% 50%; }
+  .cms-edit-surface button:hover {
+    background: url(../images/Grid_Controls.png) no-repeat 50% 50%; }
+.cms-edit-surface .cms-edit-grid-spot:hover {
+  background: url(../images/Grid_Controls.png) no-repeat 0 0; }
+.cms-edit-surface .cms-revert-grid-spot {
+  background-position: 0 -90px; }
+  .cms-edit-surface .cms-revert-grid-spot:hover {
+    background-position: 0 -30px; }
+.cms-edit-surface .cms-lock-grid-spot {
+  background-position: 0 -120px; }
+  .cms-edit-surface .cms-lock-grid-spot:hover {
+    background-position: 0 -120px; }
+
+.locked_alert_tooltip {
+  width: 290px;
+  height: 120px;
+  padding: 10px 20px 10px;
+  background: rgba(28, 29, 31, 0.6);
+  background: -moz-linear-gradient(top, rgba(28, 29, 31, 0.6) 0%, #1c1d1f 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(28, 29, 31, 0.6)), color-stop(100%, #1c1d1f));
+  background: -webkit-linear-gradient(top, rgba(28, 29, 31, 0.6) 0%, #1c1d1f 100%);
+  background-image: -o-linear-gradient(top, rgba(28, 29, 31, 0.6) 0%, #1c1d1f 100%);
+  border: 2px solid white;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border-radius: 10px 10px 10px 10px;
+  -moz-box-shadow: 0 0 15px 3px rgba(28, 29, 31, 0.6);
+  -webkit-box-shadow: 0 0 15px 3px rgba(28, 29, 31, 0.6);
+  box-shadow: 0 0 15px 3px rgba(28, 29, 31, 0.6);
+  color: white;
+  font-size: 1.25em;
+  font-weight: inherit;
+  line-height: 1.5em;
+  font-weight: bold;
+  position: absolute;
+  margin-left: -152px;
+  margin-top: -170px; }
+  .locked_alert_tooltip .close {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    background: #1c1d1f;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px; }
+    .locked_alert_tooltip .close a {
+      color: white;
+      display: block; }
+      .locked_alert_tooltip .close a:hover {
+        text-decoration: none; }
+  .locked_alert_tooltip .arrow {
+    display: block;
+    position: absolute;
+    width: 37px;
+    height: 20px;
+    bottom: -22px;
+    border-top: 2px solid #1c1d1f;
+    left: 144px; }
+    .locked_alert_tooltip .arrow span {
+      border-style: solid;
+      border-width: 16px 16px 0px 16px;
+      border-color: #1c1d1f transparent transparent transparent;
+      display: block;
+      width: 1px;
+      position: relative;
+      left: 2px; }
+    .locked_alert_tooltip .arrow:before {
+      content: "|";
+      position: absolute;
+      -webkit-transform: rotate(-44deg);
+      -moz-transform: rotate(-44deg);
+      -o-transform: rotate(-44deg);
+      transform: rotate(-44deg);
+      right: 6px;
+      top: -13px;
+      left: 0px;
+      font-size: 28px;
+      z-index: 1000;
+      -moz-text-shadow: 0 0 15px rgba(28, 29, 31, 0.6);
+      -webkit-text-shadow: 0 0 15px rgba(28, 29, 31, 0.6);
+      text-shadow: 0 0 15px rgba(28, 29, 31, 0.6); }
+    .locked_alert_tooltip .arrow:after {
+      content: "|";
+      position: absolute;
+      -webkit-transform: rotate(44deg);
+      -moz-transform: rotate(44deg);
+      -o-transform: rotate(44deg);
+      transform: rotate(44deg);
+      right: 1px;
+      top: -4px;
+      left: 25px;
+      font-size: 28px;
+      z-index: 1000;
+      -moz-text-shadow: 0 0 15px rgba(28, 29, 31, 0.6);
+      -webkit-text-shadow: 0 0 15px rgba(28, 29, 31, 0.6);
+      text-shadow: 0 0 15px rgba(28, 29, 31, 0.6); }

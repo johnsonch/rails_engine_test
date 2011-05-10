@@ -1,0 +1,64 @@
+.mural_logo {
+  margin-bottom: 40px; }
+  .mural_logo h1 {
+    font-family: "Fontdiner Swanky", arial, serif;
+    font-size: 80px;
+    color: white;
+    text-shadow: rgba(28, 29, 31, 0.6) 7px 7px 6px;
+    margin: 0px;
+    line-height: 1em; }
+  .mural_logo p {
+    color: #71b213;
+    text-align: center; }
+
+.login_container {
+  width: 500px;
+  padding: 10px 20px 20px;
+  background-color: white;
+  -moz-border-radius: 5px 5px 5px 5px;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+  position: relative; }
+  .login_container input {
+    padding: 9px 0 9px 6px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+    font-size: 33px;
+    line-height: 33px; }
+    .login_container input:focus {
+      background-color: #fbf0d5; }
+  .login_container label {
+    font-size: 1.5em;
+    font-weight: bold;
+    line-height: 1.5em;
+    line-height: 1em; }
+
+.gecko .login_container {
+  -moz-box-shadow: rgba(28, 29, 31, 0.8) 0px 0px 30px;
+  -webkit-box-shadow: rgba(28, 29, 31, 0.8) 0px 0px 30px;
+  box-shadow: rgba(28, 29, 31, 0.8) 0px 0px 30px; }
+
+.webkit .login_container {
+  -moz-box-shadow: rgba(28, 29, 31, 0.8) 0px 0px 80px;
+  -webkit-box-shadow: rgba(28, 29, 31, 0.8) 0px 0px 80px;
+  box-shadow: rgba(28, 29, 31, 0.8) 0px 0px 80px; }
+
+.spinner_container {
+  background: URL("../../images/ajax-loader-liner.gif") no-repeat 50% 50%;
+  width: 400px;
+  height: 310px;
+  position: relative; }
+  .spinner_container h2 {
+    position: relative;
+    left: 33%;
+    color: white; }
+
+.login_form {
+  position: relative; }
+
+.webkit .spinner_container h2 {
+  top: 57%; }
+
+.gecko .spinner_container h2 {
+  margin-top: 43%; }

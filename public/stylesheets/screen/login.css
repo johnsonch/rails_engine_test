@@ -1,0 +1,19 @@
+#login-screen #header {
+  display: none; }
+
+.login_body {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  -webkit-box-orient: vertical;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+  -moz-box-orient: vertical;
+  -moz-box-pack: center;
+  -moz-box-align: center;
+  box-orient: vertical;
+  box-pack: center;
+  box-align: center;
+  height: 100%;
+  width: 100%;
+  margin-top: -5%; }
