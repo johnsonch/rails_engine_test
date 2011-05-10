@@ -1,0 +1,9 @@
+stylesheets:
+  mural:
+    - public/stylesheets/reset.css
+    - public/stylesheets/design.css
+    - public/stylesheets/text.css
+    - public/stylesheets/forms.css
+    - public/stylesheets/plugin/*.css
+    - public/stylesheets/widgets/*.css
+    - public/stylesheets/screen/*.css
