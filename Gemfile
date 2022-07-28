@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.0.7'
+gem 'rails', '5.2.8.1'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -31,7 +31,7 @@ gem 'sqlite3'
 # end
 gem "cucumber-rails", :group => [:development, :test]
 gem "capybara", :group => [:development, :test]
-gem "jquery-rails"
+gem "jquery-rails", ">= 1.0.1"
 gem "rspec-rails", ">= 2.0.1", :group => [:development, :test]
 
 gem 'styleguide', :path => '/Users/mnitheib/styleguide'
